@@ -1,3 +1,4 @@
+# service.yaml - Kubernetes Service configuration for Flask application
 apiVersion: v1
 kind: Service
 metadata:

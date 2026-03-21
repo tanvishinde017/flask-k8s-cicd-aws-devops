@@ -1,3 +1,4 @@
+# deployment.yaml - Kubernetes Deployment configuration for Flask application
 apiVersion: apps/v1
 kind: Deployment
 metadata:
