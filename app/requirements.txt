@@ -1,2 +1,3 @@
+# requirements.txt - Python dependencies for Flask application
 flask
 gunicorn
