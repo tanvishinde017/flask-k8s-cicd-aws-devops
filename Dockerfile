@@ -1,3 +1,4 @@
+# Dockerfile - Docker configuration for Flask application in Kubernetes DevOps project
 FROM python:3.10-slim
 
 WORKDIR /app
