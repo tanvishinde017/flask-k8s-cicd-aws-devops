@@ -1,3 +1,4 @@
+# app.py - A simple Flask application for Kubernetes DevOps project
 from flask import Flask, jsonify
 
 app = Flask(__name__)
