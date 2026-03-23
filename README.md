@@ -25,34 +25,7 @@ GitHub Actions
 Linux
 
 📂 Project Structure
-FLASK-K8S-CICD-AWS-DEVOPS
-│
-├── .github/
-├── app/
-│   ├── app.py
-│   └── requirements.txt
-│
-├── architecture/
-│   └── workflow.png
-│
-├── k8s/
-│   ├── deployment.yaml
-│   └── service.yaml
-│
-├── screenshots/
-│   ├── docker-build-k8s.png
-│   ├── dockerhub-k8s.png
-│   ├── ec2-instance-created.png
-│   ├── k8-running-ec2.png
-│   ├── k8s-live.png
-│   ├── live-aws.png
-│   ├── minikube-ec2-running.png
-│   ├── project-structure.png
-│   └── wslconfig.png
-│
-├── Dockerfile
-├── .dockerignore
-└── README.md
+![Project Structure](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/project-structure.png)
 
 🐍 Flask Application
 Endpoint
