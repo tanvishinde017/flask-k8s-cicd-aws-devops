@@ -73,15 +73,27 @@ docker push your-dockerhub/flask-k8s-app
 
 ![Docker successfully builds flask-k8s-app image showing multiple layers created with hash IDs, demonstrating containerization of the Flask application for deployment to Kubernetes and AWS](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/docker-build-k8s.png)
 
+![DockerHub dashboard displaying the tanvishinde017 repository namespace with flask-k8s-app image successfully pushed, showing image layers, tags, and push history in the container registry interface](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/dockerhub-k8s.png)
+
 
 ☸️ Kubernetes Deployment
 kubectl apply -f k8s/deployment.yaml
 kubectl apply -f k8s/service.yaml
 
+
+![Kubernetes pods running on AWS EC2 instance displaying two flask-app pods in Running status with 1/1 ready replicas, each 155 seconds old. kubectl get svc output shows flask-service NodePort exposing port 5000 on cluster IP 10.109.183.0 with external access via port 30007 on TCP, created 15 seconds ago. Successful deployment confirmation showing containerized Flask application actively running in Kubernetes cluster on AWS infrastructure.](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/k8-running-ec2.png)
+
+k8s-live
+![Minikube service dashboard showing flask-service successfully running on local Kubernetes cluster with namespace default, service name flask-service, target port 5000, and URL http://192.168.49.2:30007. Tunnel established to localhost:58380. Terminal displays kubectl port-forward command output confirming service is accessible locally. Message indicates Docker driver is active on Windows, requiring open terminal to maintain connection. Screenshot captures successful local Kubernetes deployment ready for testing.](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/k8s-live.png)
+
+
 🌍 Live Application on AWS
 
 http://EC2_PUBLIC_IP:NodePort
 🔄 CI/CD Pipeline (GitHub Actions)
+
+![EC2 Instance](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/ec2-instance-created.png)
+
 
 GitHub Actions automates:
 
