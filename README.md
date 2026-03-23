@@ -1,4 +1,4 @@
-📄 README.md (FULL – Copy Paste)
+
 # 🚀 Flask App Deployment using Docker, Kubernetes, CI/CD & AWS
 
 ## 📌 Project Overview
