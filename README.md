@@ -92,6 +92,7 @@ k8s-live
 http://EC2_PUBLIC_IP:NodePort
 🔄 CI/CD Pipeline (GitHub Actions)
 
+☁️ EC2 Instance
 ![EC2 Instance](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/ec2-instance-created.png)
 
 
@@ -100,6 +101,10 @@ GitHub Actions automates:
 Build Docker Image
 Push to DockerHub
 Deploy to Kubernetes
+
+🐳 Minikube on EC2
+![Minikube EC2](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/minikube-ec2-running.png)
+
 
 🏗️ DevOps Workflow
 
@@ -110,6 +115,9 @@ Deploy to Kubernetes
 5️⃣ EC2 pulls image
 6️⃣ Kubernetes deploys container
 7️⃣ Application goes live
+
+🌍 Live AWS App
+![Live AWS](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/live-aws.png)
 
 ⚠️ Challenges & Solutions
 ❌ Docker not running
@@ -131,6 +139,9 @@ Deploy to Kubernetes
 📌 GitHub Repository
 
 👉 https://github.com/tanvishinde017/flask-k8s-cicd-aws-devops
+
+⚙️ WSL Config
+![WSL Config](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshots/wslconfig.png)
 
 👩‍💻 Author
 
