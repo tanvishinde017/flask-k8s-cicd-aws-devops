@@ -94,6 +94,8 @@ docker build -t flask-app .
 ▶️ Run Container
 docker run -p 5000:5000 flask-app
 📸 Screenshot
+![Project directory structure showing Flask app, Kubernetes configs, Docker files, and documentation organized in folders](screenshots/project-structure.png)
+
 
 ☸️ Kubernetes Setup (Minikube)
 ▶️ Start Minikube
