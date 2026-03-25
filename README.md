@@ -9,7 +9,7 @@ This project demonstrates a complete DevOps pipeline for deploying a Flask appli
 🔄 GitHub Actions (CI/CD)
 ☁️ AWS EC2 (Cloud Deployment)
 
-🎯 The goal is to simulate a real-world production pipeline from development to deployment.
+🎯 The goal is to simulate a real-world production pipeline from development to deployment..
 
 🧠 Project Architecture
 
