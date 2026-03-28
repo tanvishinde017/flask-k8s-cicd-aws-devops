@@ -1,4 +1,3 @@
-# deployment.yaml - Kubernetes Deployment configuration for Flask application
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,6 +14,15 @@ spec:
     spec:
       containers:
       - name: flask-container
-        image: tanvishinde017/flask-k8s-app
+        image: tanvishinde017/flask-k8s-app:latest   # ✅ added tag
+        imagePullPolicy: Always                      # ✅ always pull latest
         ports:
         - containerPort: 5000
+
+        resources:                                   # ✅ needed for auto scaling
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "200m"
+            memory: "256Mi"
