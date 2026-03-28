@@ -18,13 +18,15 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build Image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app .
+    # ✅ Build & Push with version tag
+    - name: Build and Push Image
+      run: |
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app:${{ github.sha }} .
+        docker tag ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app:${{ github.sha }} ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app:${{ github.sha }}
+        docker push ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app:latest
 
-    - name: Push Image
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app
-
-    # ✅ Install kubectl FIRST
+    # ✅ Install kubectl
     - name: Set up kubectl
       uses: azure/setup-kubectl@v3
       with:
