@@ -24,14 +24,24 @@ jobs:
     - name: Push Image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/flask-k8s-app
 
-    # ✅ ADD THIS PART HERE 👇
+    # ✅ Install kubectl FIRST
     - name: Set up kubectl
       uses: azure/setup-kubectl@v3
       with:
         version: 'latest'
 
+    # ✅ AWS Login
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-south-1
+
+    # ✅ Connect to EKS
+    - name: Update kubeconfig
+      run: aws eks update-kubeconfig --name flask-cluster --region ap-south-1
+
+    # ✅ Deploy
     - name: Deploy to EKS
-      run: |
-        mkdir -p ~/.kube
-        echo "${{ secrets.KUBE_CONFIG_DATA }}" > ~/.kube/config
-        kubectl apply -f k8s/
+      run: kubectl apply -f k8s/
