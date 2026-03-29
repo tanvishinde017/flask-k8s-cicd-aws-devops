@@ -119,6 +119,11 @@ Deploy to Kubernetes
 
 
 🚀 PART 2: ADVANCED DEVOPS (AWS EKS + MONITORING + SCALING)
+
+workflow 
+![workflow](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshot2/workflow_2.png)
+
+
 ☸️ AWS EKS-Based Production Deployment
 
 This phase demonstrates deploying the Flask application on a managed Kubernetes service (Amazon EKS) with:
