@@ -121,6 +121,7 @@ Deploy to Kubernetes
 🚀 PART 2: ADVANCED DEVOPS (AWS EKS + MONITORING + SCALING)
 
 workflow 
+
 ![workflow](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshot2/workflow_2.png)
 
 
@@ -142,7 +143,7 @@ eksctl create cluster --name flask-cluster --region ap-south-1
 📸 CloudFormation Dashboard
 ![Dashboard](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/screenshot2/cloudformation_dashboard.png)
 
-👉 AWS automatically provisions:
+👉 AWS automatically provisions :
 
 VPC
 Worker Nodes
