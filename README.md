@@ -2,14 +2,14 @@
 
 ![Flask Kubernetes CI/CD AWS DevOps pipeline workflow showing developer pushing code through GitHub and GitHub Actions to build Docker images, push to DockerHub, deploy to AWS EC2 with Kubernetes, and run live application with kubectl port-forward on port 5000](https://raw.githubusercontent.com/tanvishinde017/flask-k8s-cicd-aws-devops/main/architecture/workflow.png)
 
-This project demonstrates a complete DevOps pipeline for deploying a Flask application using...
+This project demonstrates a complete DevOps pipeline for deploying a Flask application using....
 
 🐳 Docker (Containerization)
 ☸️ Kubernetes (Minikube)
 🔄 GitHub Actions (CI/CD)
 ☁️ AWS EC2 (Cloud Deployment)
 
-🎯 The goal is to simulate a real-world production pipeline from development to deployment..
+🎯 The goal is to simulate a real-world production pipeline from development to deployment...
 
 🧠 Project Architecture
 
