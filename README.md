@@ -16,7 +16,7 @@ This project demonstrates a complete DevOps pipeline for deploying a Flask appli
 Pipeline Flow:
 Developer → GitHub → GitHub Actions → DockerHub → AWS EC2 → Kubernetes → Live App
 
-⚙️ Tech Stack
+⚙️ Tech Stack 
 Python (Flask)
 Docker
 Kubernetes (Minikube)
@@ -29,15 +29,16 @@ Linux
 
 🐍 Flask Application
 Endpoint
+
 /
 
-Response:
+Response :
 
 Hello from Flask DevOps Project
 
 🐳 Docker Build
 
-docker build -t flask-k8s-app .
+docker build -t flask-k8s-app.
 📦 DockerHub Push
 
 docker tag flask-k8s-app your-dockerhub/flask-k8s-app
